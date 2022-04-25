@@ -1,0 +1,115 @@
+//V9 Preset
+class Header {
+    gameType = "Coop"; // Game type, see 'class' columns in the table below
+    minPlayers = 1; //min # of players the mission supports
+    maxPlayers = 60; //max # of players the mission supports
+};
+joinUnassigned = 1;
+allowFunctionsRecompile = 1;
+allowFunctionsLog = 1;
+briefing = 0;
+debriefing = 0;
+loadScreen = "images\BSO_Logo.paa";
+overviewPicture = "";
+enableDebugConsole[] = {"76561198073410815","76561198044297959","76561198073410815","76561198024742337","76561198059004332","76561198085459284"}; // Enables debug console standard for certain players DON'T REMOVE
+
+disabledAI = 1;
+author = "BSO Team";
+onLoadName = "BSO Scenario";
+onLoadMission = "BSO Scenario";
+
+//Respawn setup below currently set to respawn on markers and allow players to select where to respawn
+respawn = 3;
+respawnDelay = 3;
+respawnDialog = 0;
+respawnOnStart = 0;
+respawnTemplatesWest[] = {"MenuPosition","Counter"};
+
+// DO NOT TOUCH UNLESS YOU KNOW WHAT YOU ARE DOING
+
+class CLib {
+    useExperimentalAutoload = 0;
+    useFallbackRemoteExecution = 0;
+    useCompressedFunction = 0;
+    Modules[] = {"CLib", "BSO/RBU", "BSO/EarPlugs", "BSO/BFT_light", "BSO/Zeus", "BSO/Caching" , "BSO/Scoreboard" , "BSO/MedicBuildings" };        //GROUP MARKERS
+    //Modules[] = {"CLib", "BSO/RBU", "BSO/EarPlugs", "BSO/Zeus", "BSO/Caching" , "BSO/Scoreboard" };                           //NO GROUP MARKERS
+    //remove the above '//' and add them to the other line to either use or not use the group marker system
+
+    class GarbageCollector {
+        EnableGarbageCollector = 1; //Set to 0 if you don't want automatic cleanup of objects on your mission
+        GarbageCollectorTime = 300;
+    };
+};
+
+class BSO {
+    class CfgCommon {
+        enableDynamicGroups = 1;
+        speedModifier = 1; //Pvp is 1.2
+        infiniteStamina = 0;
+    };
+    class CfgMedicBuildings {
+        enabled = 1;
+        healTimePerUnit = 5;
+        healCooldownPerUnit = 180;
+        buildings[] = {"Land_Medevac_house_V1_F", "Land_Medevac_HQ_V1_F","USMC_WarfareBFieldhHospital","US_WarfareBFieldhHospital_Base_EP1","TK_GUE_WarfareBFieldhHospital_Base_EP1","TK_WarfareBFieldhHospital_Base_EP1"};
+    };
+    class CfgBFT {
+        onlyPlayer = 1;
+        showGroupPlayer = 1;
+        drawLines = 1;
+        useBSOMarker = 0;
+        onlyGroupLeaderGroupMarker = 1;
+        onlyGroupLeaderUnitMarker = 1;
+    };
+    class CfgCaching {
+        DistanceGroup = "3000";
+        DistanceVehicle = "3000";
+        DistanceEmptyVehicle = "250";
+        DistanceProps = "50";
+        CoefDefault = "2";
+    };
+    class CfgRBU {
+        hearingDistance = 1500;
+        numberOfAi = 3;
+        waypointsCount = 3;
+        searchRadius = 100;
+        aiMode = "RED";
+        walkTime = 25;
+        maxRunning = 3;
+    };
+    class CfgScoreBoard {
+        enableFix = 1;
+        usePersistentScoreBoard = 1;
+    };
+    class CfgServicing {
+        enableServices = 1;
+        useServiceMarkers = 1;
+        class myCarService {
+            markerName = "myCarServiceMarker";
+            markerText = "Vehicle Servicing";
+            vehTypes[] = {"Car", "Tank"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 1;
+        };
+        class myHeloService {
+            markerName = "myHeloServiceMarker";
+            markerText = "Helicopter Servicing";
+            vehTypes[] = {"Helicopter"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 0.75;
+        };
+        class myPlaneService {
+            markerName = "myPlaneServiceMarker";
+            markerText = "Plane Servicing";
+            vehTypes[] = {"Plane"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 0.5;
+        };
+    };
+};
