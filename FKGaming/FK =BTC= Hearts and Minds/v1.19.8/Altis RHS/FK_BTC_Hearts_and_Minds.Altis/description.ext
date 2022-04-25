@@ -1,0 +1,142 @@
+
+loadScreen = "core\img\btc.paa";
+author = Vdauphin, giallustio, modified by ryan(a), kMaN;
+onLoadName = [FK] =BTC= Hearts and Minds;
+onLoadMission = www.fkgaming.eu;
+enabledebugconsole = 1;
+
+#include "core\fnc\common\dlg.hpp"
+#include "core\fnc\fob\dlg.hpp"
+#include "core\fnc\log\dlg.hpp"
+#include "core\fnc\debug\defines.hpp"
+
+class RscTitles {
+    class Default {
+        idd = -1;
+        fadein = 0;
+        fadeout = 0;
+        duration = 0;
+    };
+    #include "core\fnc\log\rsc.hpp"
+    #include "core\fnc\debug\dlg.hpp"
+};
+
+#include "core\sounds\sounds.hpp"
+
+#include "core\def\param.hpp"
+
+#include "core\fnc\mil\aiskill.hpp"
+
+#include "core\fnc\task\tasktypes.hpp"
+
+class CfgFunctions {
+    #include "core\fnc\eh\functions.hpp"
+    // add your own functions below
+};
+
+// CBA XEH
+class Extended_PreInit_EventHandlers {
+    #include "core\fnc\eh\xeh_PreInit_EH.hpp"
+};
+
+class Extended_InitPost_EventHandlers {
+    class LandVehicle {
+        #include "core\fnc\eh\xeh_InitPost_EH_Vehicle.hpp"
+    };
+    class Air {
+        #include "core\fnc\eh\xeh_InitPost_EH_Vehicle.hpp"
+    };
+    class Ship {
+        #include "core\fnc\eh\xeh_InitPost_EH_Vehicle.hpp"
+    };
+};
+
+// Disable BI wreck system (H&M handle it internally)
+wreckManagerMode = 0;
+corpseManagerMode = 0;
+
+cba_settings_hasSettingsFile = 1;
+cba_settings_whitelist[] = {"admin","76561198085459284"};
+
+class CLib {
+    useExperimentalAutoload = 0;
+    useFallbackRemoteExecution = 0;
+    useCompressedFunction = 0;
+    Modules[] = {"CLib", "FKF/Common", "BSO/EarPlugs", "BSO/BFT_light", "BSO/MedicBuildings", "FKF/Zeus"};        //GROUP MARKERS
+    //Modules[] = {"CLib", "FKF/Common", "BSO/EarPlugs", "BSO/BFT_light", "BSO/MedicBuildings", "FKF/Zeus"};        //NO GROUP MARKERS
+    //remove the above '//' and add them to the other line to either use or not use the group marker system
+
+};
+
+class BSO {
+    class CfgCommon {
+        enableDynamicGroups = 1;
+        speedModifier = 1; //Pvp is 1.2
+        infiniteStamina = 0;
+    };
+    class CfgMedicBuildings {
+        enabled = 1;
+        healTimePerUnit = 5;
+        healCooldownPerUnit = 180;
+        buildings[] = {"Land_Medevac_house_V1_F", "Land_Medevac_HQ_V1_F","USMC_WarfareBFieldhHospital","US_WarfareBFieldhHospital_Base_EP1","TK_GUE_WarfareBFieldhHospital_Base_EP1","TK_WarfareBFieldhHospital_Base_EP1"};
+    };
+    class CfgBFT {
+        onlyPlayer = 1;
+        showGroupPlayer = 1;
+        drawLines = 1;
+        useBSOMarker = 0;
+        onlyGroupLeaderGroupMarker = 1;
+        onlyGroupLeaderUnitMarker = 1;
+    };
+    class CfgCaching {
+        DistanceGroup = "3000";
+        DistanceVehicle = "3000";
+        DistanceEmptyVehicle = "250";
+        DistanceProps = "50";
+        CoefDefault = "2";
+    };
+    class CfgRBU {
+        hearingDistance = 1500;
+        numberOfAi = 3;
+        waypointsCount = 3;
+        searchRadius = 100;
+        aiMode = "RED";
+        walkTime = 25;
+        maxRunning = 3;
+    };
+    class CfgScoreBoard {
+        enableFix = 1;
+        usePersistentScoreBoard = 1;
+    };
+    class CfgServicing {
+        enableServices = 1;
+        useServiceMarkers = 1;
+        class myCarService {
+            markerName = "myCarServiceMarker";
+            markerText = "Vehicle Servicing";
+            vehTypes[] = {"Car", "Tank"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 1;
+        };
+        class myHeloService {
+            markerName = "myHeloServiceMarker";
+            markerText = "Helicopter Servicing";
+            vehTypes[] = {"Helicopter"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 0.75;
+        };
+        class myPlaneService {
+            markerName = "myPlaneServiceMarker";
+            markerText = "Plane Servicing";
+            vehTypes[] = {"Plane"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 0.5;
+        };
+    };
+};

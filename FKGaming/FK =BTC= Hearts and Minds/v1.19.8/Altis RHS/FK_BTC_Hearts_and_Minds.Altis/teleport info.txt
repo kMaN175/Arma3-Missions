@@ -1,0 +1,6 @@
+//1. Place code in an objects .ini
+//2. Name teleport objects variable
+
+this addAction ["<t color='#FF0000'>Teleport Carrier</t>", {player setPosASL (getPosASL carrier)}];
+this addAction ["<t color='#FF0000'>Teleport Destroyer</t>", {player setPosASL (getPosASL destroyer)}];
+this addAction ["<t color='#FF0000'>Teleport Base</t>", {player setPosASL (getPosASL base)}];
