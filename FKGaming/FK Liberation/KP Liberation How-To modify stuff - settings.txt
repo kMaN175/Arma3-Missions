@@ -1,0 +1,8 @@
+Change the frequecny of IED's:
+
+https://github.com/KillahPotatoes/KP-Liberation/blob/master/Missionframework/scripts/server/sector/manage_one_sector.sqf
+Line 65, 98, 144
+
+https://github.com/KillahPotatoes/KP-Liberation/blob/master/Missionframework/scripts/server/asymmetric/asymmetric_loop.sqf
+Line 42
+

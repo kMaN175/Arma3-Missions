@@ -1,0 +1,128 @@
+respawn = 3;
+respawndelay = 5;
+respawnButton = 1;
+disabledAI = true;
+
+enableDebugConsole = 1;
+allowFunctionsLog = 0;
+unsafeCVL = 1;
+
+briefingName = [FK] Liberation RHS Al-Rayak;
+overviewText = "www.fkgaming.eu";
+overviewPicture = "res\lib.paa";
+author = "[GREUH]Zbug, [GREUH]McKeewa, [KP]Wyqer, kMaN, ryan(a)";
+onLoadName = [FK] Liberation RHS Al-Rayak;
+onLoadMission = "www.fkgaming.eu";
+loadScreen = "res\lib.paa";
+
+joinUnassigned = 1;
+
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 600;
+corpseRemovalMaxTime = 3600;
+wreckManagerMode = 1;
+wreckLimit = 20;
+wreckRemovalMinTime = 1200;
+wreckRemovalMaxTime = 7200;
+minPlayerDistance = 1000;
+
+#include "GREUH\UI\GREUH_interface.hpp"
+#include "ui\liberation_interface.hpp"
+#include "ui\liberation_notifications.hpp"
+#include "ui\mission_params.hpp"
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title =	$STR_SORRY;
+		subtitle = "";
+		description = $STR_COMMANDER_NOT_AUTHORIZED;
+		pictureBackground = "";
+	};
+};
+
+cba_settings_hasSettingsFile = 1;
+cba_settings_whitelist[] = {"admin","76561198085459284"};
+
+class CLib {
+    useExperimentalAutoload = 0;
+    useFallbackRemoteExecution = 0;
+    useCompressedFunction = 0;
+    Modules[] = {"CLib","BSO/BFT_light", "BSO/MedicBuildings", "FKF/Common", "FKF/Zeus", "FKF/Towing"};    //GROUP MARKERS
+    //Modules[] = {"CLib","BSO/BFT_light", "BSO/MedicBuildings", "FKF/Common", "FKF/Zeus", "FKF/Towing"};    //NO GROUP MARKERS
+    //remove the above '//' and add them to the other line to either use or not use the group marker system
+};
+
+class BSO {
+     class CfgCommon {
+        enableDynamicGroups = 0;
+        speedModifier = 1; //Pvp is 1.2
+        infiniteStamina = 0;
+    };
+	class CfgMedicBuildings {
+        enabled = 1;
+        healTimePerUnit = 5;
+        healCooldownPerUnit = 300;
+        buildings[] = {
+			"Land_Medevac_house_V1_F",
+			"Land_Medevac_HQ_V1_F",
+			"Redd_Tank_Fuchs_1A4_San_Flecktarn",
+			"USMC_WarfareBFieldhHospital",
+			"rhs_uh1h_idap",
+			"US_WarfareBFieldhHospital_Base_EP1",
+			"TK_GUE_WarfareBFieldhHospital_Base_EP1",
+			"TK_WarfareBFieldhHospital_Base_EP1",
+			"rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy",
+			"rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy",
+			"rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy",
+			"RHS_UH60M_MEV",
+			"RHS_UH60M_MEV2",
+			"RHS_UH60M_MEV_d",
+			"RHS_UH60M_MEV2_d",
+			"UK3CB_BAF_LandRover_Amb_FFR_Green_A_MTP",
+			"UK3CB_BAF_LandRover_Amb_FFR_Sand_A_DDPM",
+			"C_IDAP_Van_02_medevac_F"
+};
+    };
+    class CfgBFT {
+        onlyPlayer = 1;
+        showGroupPlayer = 1;
+        drawLines = 1;
+        useBSOMarker = 0;
+        onlyGroupLeaderGroupMarker = 1;
+        onlyGroupLeaderUnitMarker = 0;
+    };
+    class CfgServicing {
+        enableServices = 1;
+        useServiceMarkers = 1;
+        class myCarService {
+            markerName = "myCarServiceMarker";
+            markerText = "Vehicle Servicing";
+            vehTypes[] = {"Car", "Tank"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 1;
+        };
+        class myHeloService {
+            markerName = "myHeloServiceMarker";
+            markerText = "Helicopter Servicing";
+            vehTypes[] = {"Helicopter"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 0.75;
+        };
+        class myPlaneService {
+            markerName = "myPlaneServiceMarker";
+            markerText = "Plane Servicing";
+            vehTypes[] = {"Plane"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 0.5;
+        };
+    };
+};

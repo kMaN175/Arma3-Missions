@@ -1,0 +1,104 @@
+respawn = 3;
+respawndelay = 5;
+respawnButton = 1;
+disabledAI = true;
+
+enableDebugConsole[] = {
+				"76561198028602617",	// BigT
+				"76561198029824073",	// Neil
+				"76561198059172666",	// Batty
+				"76561198006673066",	//
+				"76561197974309353",	// Mullet
+				"76561198064848343",	//
+				"76561197963021423",	//
+				"76561197963992407",	// Mavy
+				"76561198018580011",	// Anden
+				"76561198044297959",	// ShadowFox
+				"76561198022445562",	// ryana
+				"76561198085459284",	// kMaN
+				"76561198071398209",	// Alex
+				"76561198058603584",	// Vericht
+				"76561198007971485"		// AndyT90
+};
+
+cba_settings_hasSettingsFile = 1;
+cba_settings_whitelist[] = {
+				"admin",
+				"76561198028602617",	// BigT
+				"76561198029824073",	// Neil
+				"76561198059172666",	// Batty
+				"76561198006673066",	// 
+				"76561197974309353",	// Mullet
+				"76561198064848343",	// 
+				"76561197963021423",	// 
+				"76561197963992407",	// Mavy
+				"76561197988002951",	// 
+				"76561198007971485",	// AndyT90
+				"76561198107218407",	// Rezonath
+				"76561197991936788",	// 
+				"76561198018580011",	// Anden
+				"76561198085436105",	// 
+				"76561198121742811",	// 
+				"76561198042761696",	// Silber
+				"76561197989250571",	// 
+				"76561198043206843",	// 
+				"76561198075889759",	// ShadowFox
+				"76561198022445562",	// ryana
+				"76561198085459284",	// kMaN
+				"76561198071398209",	// Alex
+				"76561198058603584",	// Vericht
+				"76561198007971485",	// AndyT90
+				"76561198026235937",	// Garfield
+				"76561198010773040",	// Jerichron
+				"76561198026267417",	// Legendo
+				"76561198164186327",	// Lexic
+				"76561198097287666",	// Rabit
+				"76561198107218407",	// Rezonath
+				"76561198042761696",	// Silber
+				"76561198027514429",	// Spartan
+				"76561198103499575",	// ThatSlickOniichan
+				"76561198050907409",	// Xenborg
+				"76561198103499575",	// Kalta
+				"76561198098229239",	// Cinefx
+				"76561198043103580",	// Mittens
+				"76561197987346220"		// PointForward
+};
+
+allowFunctionsLog = 0;
+unsafeCVL = 1;
+
+briefingName = FK Liberation WW2 West Allied;
+overviewText = "www.fkgaming.eu";
+overviewPicture = "res\lib.paa";
+author = "[GREUH]Zbug and McKeewa, [KP]Wyqer, Eclipser, Piper, kMaN";
+onLoadName = FK Liberation WW2 West Allied;
+onLoadMission = "www.fkgaming.eu";
+loadScreen = "res\lib.paa";
+
+joinUnassigned = 1;
+
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 600;
+corpseRemovalMaxTime = 3600;
+wreckManagerMode = 1;
+wreckLimit = 20;
+wreckRemovalMinTime = 1200;
+wreckRemovalMaxTime = 7200;
+minPlayerDistance = 1000;
+
+#include "GREUH\UI\GREUH_interface.hpp"
+#include "ui\liberation_interface.hpp"
+#include "ui\liberation_notifications.hpp"
+#include "ui\mission_params.hpp"
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title =	$STR_SORRY;
+		subtitle = "";
+		description = $STR_COMMANDER_NOT_AUTHORIZED;
+		pictureBackground = "";
+	};
+};

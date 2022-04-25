@@ -1,0 +1,47 @@
+respawn = 3;
+respawndelay = 5;
+respawnButton = 1;
+disabledAI = true;
+
+enableDebugConsole = 1;
+allowFunctionsLog = 0;
+unsafeCVL = 1;
+
+briefingName = FK Liberation Chern Winter;
+overviewText = "www.fkgaming.eu";
+overviewPicture = "res\lib.paa";
+author = "[GREUH]Zbug,[GREUH]McKeewa,[KP]Wyqer,kMaN,HammerJG";
+onLoadName = FK Liberation Chern Winter;
+onLoadMission = "www.fkgaming.eu";
+loadScreen = "res\lib.paa";
+
+joinUnassigned = 1;
+
+cba_settings_hasSettingsFile = 1;
+cba_settings_whitelist[] = {"admin","76561197963992407","76561198029824073","76561198059172666","76561198018580011","76561198044297959","76561198085459284","76561198028602617","76561197974309353","76561198071398209","76561198007971485","76561198058603584","76561197987346220","76561198107218407","76561198027514429","76561198026267417","76561198010773040","76561198164186327","76561198103499575","76561198042761696","76561198097287666","76561198050907409","76561198026235937"};
+
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 600;
+corpseRemovalMaxTime = 3600;
+wreckManagerMode = 1;
+wreckLimit = 20;
+wreckRemovalMinTime = 1200;
+wreckRemovalMaxTime = 7200;
+minPlayerDistance = 1000;
+
+#include "GREUH\UI\GREUH_interface.hpp"
+#include "ui\liberation_interface.hpp"
+#include "ui\liberation_notifications.hpp"
+#include "ui\mission_params.hpp"
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title =	$STR_SORRY;
+		subtitle = "";
+		description = $STR_COMMANDER_NOT_AUTHORIZED;
+		pictureBackground = "";
+	};
+};

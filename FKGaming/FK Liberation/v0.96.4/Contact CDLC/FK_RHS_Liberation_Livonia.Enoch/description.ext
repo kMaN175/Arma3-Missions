@@ -1,0 +1,33 @@
+respawn = 3;
+respawndelay = 5;
+respawnButton = 1;
+disabledAI = true;
+
+enableDebugConsole = 1;
+allowFunctionsLog = 0;
+
+briefingName = FK Livonia Liberation;
+overviewText = "https://www.fuckknows.eu";
+overviewPicture = "res\lib.paa";
+author = "[GREUH]Zbug, [GREUH]McKeewa, [KP]Wyqer, VoxedVEVO, kMaN";
+onLoadName = FK Livonia Liberation;
+onLoadMission = "https://www.fuckknows.eu";
+loadScreen = "res\lib.paa";
+
+joinUnassigned = 1;
+
+#include "GREUH\UI\GREUH_interface.hpp"
+#include "ui\liberation_interface.hpp"
+#include "ui\liberation_notifications.hpp"
+#include "ui\mission_params.hpp"
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title =	$STR_SORRY;
+		subtitle = "";
+		description = $STR_COMMANDER_NOT_AUTHORIZED;
+		pictureBackground = "";
+	};
+};
