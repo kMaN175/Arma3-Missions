@@ -1,0 +1,67 @@
+//-------------------------------------------------- Training Areas
+
+DIARY_SUBJECT("Prophet Training Course");
+DIARY_SUBJECT("Training Areas");
+
+
+DIARY_RECORD_START("Training Areas", "Counter-Sniper Range")
+"
+<br />The <marker name = 'csrange'>Counter-Sniper Range</marker> is the culmination test for the sniper/spotter team.  The test brings together the teams stalking, setup and shooting accuracy skills into one
+exercise.<br /><br />
+The trainee's choose one of the four CS Start Points to begin the exercise.<br /><br />
+Trainee's are to stalk (move stealthfully) into a good hide (observation and shooting position) somewhere around the town of Kavala.  The trainee's are looking for the enemy sniper and are to kill the sniper at the first opportunity.<br /><br />
+Beware, the enemy sniper is looking for the trainee's and will kill them as well!!<br /><br />
+<img image='images\csrange.jpg' width='390' height='270'/><br /><br />
+You have three chances in 60 minutes to successfully kill the enemy sniper located inside Kavala.<br />
+Killing the enemy sniper is worth 50 points.<br />
+Not being seen in your hide is worth 15 points.<br />
+Being seen in your hide, but not being killed is worth 5 points.<br />
+If the enemy sniper kills you then you lose 10 points.  Be carfeful because this can minus a total of 30 points for you during the exercise.<br />
+<br />
+"
+DIARY_RECORD_END;
+DIARY_RECORD_START("Training Areas", "Unknown Distance (Field-Fire) Range")
+"
+<br />An alternate spawn or start point is the <marker name = 'udrange'>Unknown Distance Range</marker> also known as the Field-Fire Range has targets in various positions at unknown distances.<br /><br />
+<img image='images\udrange.jpg' width='390' height='270'/><br /><br />
+The range is 1000 meters long using the pop-up targets<br /><br />
+<img image='images\target.jpg' width='390' height='270'/><br /><br />
+Targets can be located anywhere in the valley so have a sharp eye!<br /><br />
+<img image='images\target1.jpg' width='390' height='270'/><br /><br />
+During the test you will have 10 minutes and 24 bullets/rounds to shoot 12 targets.  Each hit on a target is worth 10 points.<br />
+<br />
+"
+DIARY_RECORD_END;
+DIARY_RECORD_START("Training Areas", "Known Distance (KD) Range")
+"
+<br />The <marker name = 'kd'>Known Distance (KD) Range</marker> is the basic range used in training the sniper/spotter team.<br /><br />
+<img image='images\kdrange.jpg' width='390' height='270'/><br /><br />
+The range is 1000 meters long using the pop-up targets located every 100 meters.<br /><br />
+<img image='images\target.jpg' width='390' height='270'/><br /><br />
+During your test you will have 5 minutes and 10 bullets/rounds to shoot 10 targets.  Each hit on a target is worth 10 points.<br />
+<br />
+"
+DIARY_RECORD_END;
+DIARY_RECORD_START("Prophet Training Course", "Scoring")
+"
+There are three seperate ranges where the shooting tests are conducted.<br /><br />
+Known Distance (KD) Range- You will have 5 minutes and 10 bullets/rounds to shoot 10 targets.  Each hit on a target is worth 10 points.<br />
+Unknown Distance (Field-Fire) Range- You will have 10 minutes and 24 bullets/rounds to shoot 12 targets.  Each hit on a target is worth 10 points.<br />
+Counter-Sniper (CS) Range- You have three chances in 60 minutes to successfully kill the enemy sniper located inside Kavala.<br />
+Killing the enemy sniper is worth 50 points.<br />
+Not being seen in your hide is worth 15 points.<br />
+Being seen in your hide, but not being killed is worth 5 points.<br />
+If the enemy sniper kills you then you lose 10 points.  Be carfeful because this can minus a total of 30 points for you during the exercise.<br /><br />
+Trainee's must accumulate 180 points out of a possible 220 to successfully pass the sniper/spotter shooting qualification and ear their tag/s.  If a student fails to meet the minimum score then he or she will need to attend the Prohet Training Course again from the beginning.<br />
+<br />
+"
+DIARY_RECORD_END;
+DIARY_RECORD_START("Prophet Training Course", "Welcome to Training")
+"
+The course begins at the Known Distance (KD) Range where trainee's learn the basics of the sniper/spotter team.  This is also the beginning of the sniper/spotter shooting qualification test.<br /><br />
+Next, the students will move to the Unknown Distance (Field-Fire) Range where the trainee's will further build their target identification, ranging and shooting skills.  This is the second range
+used during the sniper/spotter shooting qualification.<br /><br />
+Finally, the Counter-Sniper Range will test the students ability to stalk into a hide, find his target and successfully engage (shoot/kill) the target.  This is the final test in the sniper/spotter shooting qualification.<br />
+<br />
+"
+

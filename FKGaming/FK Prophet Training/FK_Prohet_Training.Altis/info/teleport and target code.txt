@@ -1,0 +1,21 @@
+Known Distance (KD) Range Laptop Code:
+this addAction ["Reset targets 100m", {0 = [80, iCenter_1] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 200m", {0 = [80, iCenter_2] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 300m", {0 = [80, iCenter_3] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 400m", {0 = [80, iCenter_4] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 500m", {0 = [80, iCenter_5] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 600m", {0 = [80, iCenter_6] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 700m", {0 = [80, iCenter_7] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 800m", {0 = [80, iCenter_8] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 900m", {0 = [80, iCenter_9] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 1000m", {0 = [80, iCenter_10] execVM "Scripts\reset.sqf"}];
+
+
+Unknown Distance Range Laptop Code:
+this addAction ["Reset targets 152m", {0 = [80, iCenter_11] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 215m", {0 = [80, iCenter_12] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 326m", {0 = [80, iCenter_13] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 352m", {0 = [80, iCenter_14] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 429m", {0 = [80, iCenter_15] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 602m", {0 = [80, iCenter_16] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 664m", {0 = [80, iCenter_17] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 738m", {0 = [80, iCenter_18] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 871m", {0 = [80, iCenter_19] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 962m", {0 = [80, iCenter_20] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 1062m", {0 = [80, iCenter_21] execVM "Scripts\reset.sqf"}]; this addAction ["Reset targets 1290m", {0 = [80, iCenter_22] execVM "Scripts\reset.sqf"}];
+
+
+
+
+
+
+Flad Pole Code:
+this setFlagTexture "images\fklogo.jpg";
+0 = this addaction ["<t color='#FF0000'>Tele- Unknown Distance Range</t>",{(_this select 1) setpos (markerpos "teleport_2")}]; 
+0 = this addaction ["<t color='#FF0000'>Tele- Known Distance (KD) Range</t>",{(_this select 1) setpos (markerpos "teleport_1")}];
+0 = this addaction ["<t color='#FF0000'>Tele- Counter-Sniper Start 1</t>",{(_this select 1) setpos (markerpos "teleport_3")}]; 
+0 = this addaction ["<t color='#FF0000'>Tele- Counter-Sniper Start 2</t>",{(_this select 1) setpos (markerpos "teleport_4")}]; 
+0 = this addaction ["<t color='#FF0000'>Tele- Counter-Sniper Start 3</t>",{(_this select 1) setpos (markerpos "teleport_5")}]; 
+0 = this addaction ["<t color='#FF0000'>Tele- Counter-Sniper Start 4</t>",{(_this select 1) setpos (markerpos "teleport_6")}];
+

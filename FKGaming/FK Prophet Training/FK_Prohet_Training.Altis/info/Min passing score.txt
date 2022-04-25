@@ -1,0 +1,10 @@
+To pass the training/course a shooter must have a passing score of 180 out of a possible 220.  To acheive the minimum passing score, a shooter needs to score the following;
+
+KD Range:
+minimum should be 6 hits out of 10 = 60 points
+
+Field-Fire Range:
+minimum should be 7 hits out of 12 = 70 points
+
+CS Range:
+shooter must kill the enemy smiper = 50 points
