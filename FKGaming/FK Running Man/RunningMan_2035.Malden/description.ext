@@ -1,0 +1,63 @@
+loadScreen = "titlecard.jpg";
+overviewPicture = "titlecard.jpg";
+pictureMap = "titlecard.jpg";
+
+
+class CfgDebriefing
+{  
+    class End1
+    {
+        title = "Running Man down!";
+        subtitle = "The Hunters win";
+        description = "Yet another Running Man meets his end at the hands of the Hunters! Tune in next week for another edition of Running Man!";
+        pictureBackground = "Hunterwin.jpg";
+        picture = "";
+        pictureColor[] = {};
+    };
+    class End2
+    {
+        title = "All Hunters down!";
+        subtitle = "Running Man wins";
+        description = "In a rare display of prowess the Running Man has just won $10,000,000! Tune in next week for another edition of Running Man!";
+        pictureBackground = "Runnerwin.jpg";
+        picture = "";
+        pictureColor[] = {};
+    };
+}; 
+
+class CfgSounds
+{
+	sounds[] = {};
+
+	class HS1
+	{
+		name = "HS1";
+		sound[] = {"\sound\HS1.ogg", db+05, 1};
+		titles[] = {};
+	};
+	class Welcome
+	{
+		name = "HS1";
+		sound[] = {"\sound\Welcome.ogg", db+15, 1};
+		titles[] = {};
+	};
+	class HuntersWin
+	{
+		name = "HS1";
+		sound[] = {"\sound\HuntersWin.ogg", db+15, 1};
+		titles[] = {};
+	};
+	class RunnerWin
+	{
+		name = "HS1";
+		sound[] = {"\sound\RunnerWin.ogg", db+15, 1};
+		titles[] = {};
+	};
+	class warning
+	{
+		name = "HS1";
+		sound[] = {"\sound\warning.ogg", db+1, 1};
+		titles[] = {};
+	};
+};
+
