@@ -1,0 +1,12 @@
+0 = this addaction ["<t color='#FF0000'>Tele- Known Distance Range</t>",{(_this select 1) setpos (markerpos "teleport_1")}];
+0 = this addaction ["<t color='#FF0000'>Tele- CQB Compound 1</t>",{(_this select 1) setpos (markerpos "teleport_2")}];
+0 = this addaction ["<t color='#FF0000'>Tele- CQB Compound 2</t>",{(_this select 1) setpos (markerpos "teleport_3")}];
+0 = this addaction ["<t color='#FF0000'>Tele- Light Helo FoB</t>",{(_this select 1) setpos (markerpos "teleport_4")}];
+0 = this addaction ["<t color='#FF0000'>Tele- CQB Compound 3</t>",{(_this select 1) setpos (markerpos "teleport_5")}];
+0 = this addaction ["<t color='#FF0000'>Tele- CQB Compound 4</t>",{(_this select 1) setpos (markerpos "teleport_6")}];
+0 = this addaction ["<t color='#FF0000'>Tele- Mvmnt to Contact Range</t>",{(_this select 1) setpos (markerpos "teleport_7")}];
+0 = this addaction ["<t color='#FF0000'>Tele- CAS - EoD FoB</t>",{(_this select 1) setpos (markerpos "teleport_8")}];
+0 = this addaction ["<t color='#FF0000'>Tele- Formation Range</t>",{(_this select 1) setpos (markerpos "teleport_9")}];
+0 = this addaction ["<t color='#FF0000'>Tele- Airfield</t>",{(_this select 1) setpos (markerpos "teleport_10")}];
+0 = this addaction ["<t color='#FF0000'>Tele- Dropzone</t>",{(_this select 1) setpos (markerpos "teleport_11")}];
+0 = this addaction ["<t color='#FF0000'>Tele- USS Freedom</t>",{(_this select 1) setpos (markerpos "teleport_12")}];
