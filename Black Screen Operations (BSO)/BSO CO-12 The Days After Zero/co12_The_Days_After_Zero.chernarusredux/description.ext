@@ -1,0 +1,127 @@
+author = XFiRE ARMY;
+onLoadName = "The Days After Zero";
+loadScreen = "ravage.jpg";
+overviewPicture = "ravage.jpg";
+
+class Header 
+{
+	gameType = Survive;
+	minPlayers = 1;
+	maxPlayers = 12;
+};
+
+disabledAI = 1;
+wreckLimit = 10;
+wreckRemovalMinTime = 300;
+wreckRemovalMaxTime = 600;
+corpseLimit = 20;	
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 600;
+showGroupIndicator = 1;
+
+//-------------------------Respawn
+respawn = 3;
+respawnDelay = 30;
+respawnOnStart = 0;
+respawnTemplates[] = {"MenuPosition"};
+
+class Params
+{
+	class lootdrop
+	{
+		title = Weapons 100% LootDrop  Scripts;
+		values[] = {0, 1};
+		texts[] = {$STR_disabled, $STR_enabled};
+		default = 1;
+		file = "params\lootdrop.sqf";
+	};
+};
+
+// DO NOT TOUCH UNLESS YOU KNOW WHAT YOU ARE DOING
+
+class CLib {
+    useExperimentalAutoload = 0;
+    useFallbackRemoteExecution = 0;
+    useCompressedFunction = 0;
+    Modules[] = {"CLib", "BSO/RBU", "BSO/EarPlugs", "BSO/BFT_light", "BSO/Zeus", "BSO/Caching" , "BSO/Scoreboard" , "BSO/MedicBuildings" };        //GROUP MARKERS
+    //Modules[] = {"CLib", "BSO/RBU", "BSO/EarPlugs", "BSO/Zeus", "BSO/Caching" , "BSO/Scoreboard" };                           //NO GROUP MARKERS
+    //remove the above '//' and add them to the other line to either use or not use the group marker system
+
+    class GarbageCollector {
+        EnableGarbageCollector = 1; //Set to 0 if you don't want automatic cleanup of objects on your mission
+        GarbageCollectorTime = 300;
+    };
+};
+
+class BSO {
+    class CfgCommon {
+        enableDynamicGroups = 1;
+        speedModifier = 1; //Pvp is 1.2
+        infiniteStamina = 0;
+    };
+    class CfgMedicBuildings {
+        enabled = 1;
+        healTimePerUnit = 5;
+        healCooldownPerUnit = 180;
+        buildings[] = {"Land_Medevac_house_V1_F", "Land_Medevac_HQ_V1_F","USMC_WarfareBFieldhHospital","US_WarfareBFieldhHospital_Base_EP1","TK_GUE_WarfareBFieldhHospital_Base_EP1","TK_WarfareBFieldhHospital_Base_EP1"};
+    };
+    class CfgBFT {
+        onlyPlayer = 1;
+        showGroupPlayer = 1;
+        drawLines = 1;
+        useBSOMarker = 0;
+        onlyGroupLeaderGroupMarker = 1;
+        onlyGroupLeaderUnitMarker = 1;
+    };
+    class CfgCaching {
+        DistanceGroup = "3000";
+        DistanceVehicle = "3000";
+        DistanceEmptyVehicle = "250";
+        DistanceProps = "50";
+        CoefDefault = "2";
+    };
+    class CfgRBU {
+        hearingDistance = 1500;
+        numberOfAi = 3;
+        waypointsCount = 3;
+        searchRadius = 100;
+        aiMode = "RED";
+        walkTime = 25;
+        maxRunning = 3;
+    };
+    class CfgScoreBoard {
+        enableFix = 1;
+        usePersistentScoreBoard = 1;
+    };
+    class CfgServicing {
+        enableServices = 1;
+        useServiceMarkers = 1;
+        class myCarService {
+            markerName = "myCarServiceMarker";
+            markerText = "Vehicle Servicing";
+            vehTypes[] = {"Car", "Tank"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 1;
+        };
+        class myHeloService {
+            markerName = "myHeloServiceMarker";
+            markerText = "Helicopter Servicing";
+            vehTypes[] = {"Helicopter"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 0.75;
+        };
+        class myPlaneService {
+            markerName = "myPlaneServiceMarker";
+            markerText = "Plane Servicing";
+            vehTypes[] = {"Plane"};
+            canRepair = 1;
+            canRearm = 1;
+            canRefuel = 1;
+            speedMultiplier = 0.5;
+        };
+    };
+};
