@@ -1,0 +1,22 @@
+﻿author = "kMaN";
+onLoadMission = "TF 121 is tasked to eliminate HVT Maj. Demir";
+onLoadIntroTime = true;
+onLoadMissionTime = true;
+onLoadName = Kill the HVT;
+loadScreen = "images\officer.jpg";
+overviewText = "PID Maj Demir and eliminate him.";
+overviewTextLocked = "Eliminate the HVT and Russian forces will be in chaos!";
+overviewPicture = "";
+
+briefing = 1;
+debriefing = 1;
+disabledAI = 1;
+enableDebugConsole = 1;
+allowFunctionsRecompile = 1;
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1; 
+	maxPlayers = 15; 
+};

@@ -1,0 +1,37 @@
+﻿author = "kMaN";
+onLoadMission = "TF 121 is tasked with killed Maj. Demir";
+onLoadIntroTime = true;
+onLoadMissionTime = true;
+onLoadName = Kill the HVT;
+loadScreen = "images\officer.jpg";
+overviewText = "You need to find & kill the HVT.";
+
+briefing = 1;
+debriefing = 1;
+disabledAI = 1;
+enableDebugConsole = 1;
+allowFunctionsRecompile = 1;
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1; 
+	maxPlayers = 20; 
+};
+
+
+
+
+
+
+class CfgRemoteExec
+{         
+	// List of script commands allowed to be sent from client via remoteExec
+	class Commands
+	{
+		/*your commands here*/
+		class reveal { allowedTargets=0; jip=0; } // can target anyone, sending jip is turned off (overrides settings in the Commands class)
+		class diag_log { allowedTargets=0; jip=0; } // can target anyone, sending jip is turned off (overrides settings in the Commands class)
+		class systemChat { allowedTargets=0; jip=0; } // can target anyone, sending jip is turned off (overrides settings in the Commands class)
+	};
+};

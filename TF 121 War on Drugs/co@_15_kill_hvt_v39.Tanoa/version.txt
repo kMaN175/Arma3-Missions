@@ -1,0 +1,31 @@
+Kill the HVT
+
+made by kMaN
+
+version 39
+
+Dedicated Server_JIP Players:
+Player Respawn = working
+Vehicle Respawn = working
+Briefings = working
+Tasks = working
+IED Script = working
+FRIES = working
+UPSMON - working
+Random Weather = working
+Jboy Patrol Chatter & Light = working
+OverViewPicture = not working - BIS broke
+Random Civilians = working
+Random traffic = working
+
+Features:
+Random Patrols
+Random Weather
+Random IED's
+AI Helo Transport
+Patrol Chatter & Lights
+Enigma Random Civilians
+Enigma Random Traffic
+
+
+

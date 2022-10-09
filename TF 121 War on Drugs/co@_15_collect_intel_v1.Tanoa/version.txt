@@ -1,0 +1,19 @@
+Kill the HVT
+
+made by kMaN
+
+version 1
+
+Dedicated Server_JIP Players:
+Player Respawn = working
+Vehicle Respawn = working
+Briefings = not working
+Tasks = not working
+FRIES = not working
+
+Add IED Script
+Add OPFOR roadblocks
+Add lights & chem lights
+
+Delete markers
+
